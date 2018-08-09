@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F8FC92D-F66F-48B3-A251-78D7E69AE4C9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Toe</RootNamespace>
+    <AssemblyName>Toe.Math</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile136</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile2|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile2</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net4+sl40+netcore45+wp70\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile102|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile102</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net403+netcore45+wpa81+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile104|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile104</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net45+sl40+netcore45+wp71\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile95|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile95</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net403+sl40+netcore45+wp70\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile136|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile136</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net4+sl50+netcore45+wp8+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile14|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile14</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net4+sl50+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile143|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile143</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net403+sl40+netcore45+wp8\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile147|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile147</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net403+sl50+netcore45+wp8+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile154|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile154</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net45+sl40+netcore45+wp8\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile158|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile158</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net45+sl50+netcore45+wp8+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile18|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile18</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net403+sl40\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile19|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile19</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net403+sl50+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile225|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile225</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net4+sl50+netcore45+wpa81+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile23|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile23</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net45+sl40\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile24|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile24</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net45+sl50+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile240|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile240</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net403+sl50+netcore45+wpa81\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile255|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile255</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net45+sl50+netcore45+wpa81+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile3|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile3</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net4+sl40\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile328|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile328</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net4+sl50+netcore45+wpa81+wp8+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile336|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile336</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net403+sl50+netcore45+wpa81+wp8+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile344|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile344</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net45+sl50+netcore45+wpa81+wp8+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile36|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile36</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net4+sl40+netcore45+wp8\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile37|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile37</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net4+sl50+netcore45+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile4|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile4</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net45+sl40+netcore45+wp70\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile41|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile41</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net403+sl40+netcore45\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile42|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile42</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net403+sl50+netcore45+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile46|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile46</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net45+sl40+netcore45\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile47|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile47</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net45+sl50+netcore45+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile5|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile5</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net4+netcore45+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile6|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile6</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net403+netcore45+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile88|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile88</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net4+sl40+netcore45+wp71\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile92|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile92</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net4+netcore45+wpa81+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile96|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile96</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net403+sl40+netcore45+wp71\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile111|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net45+netcore45+wpa81+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile259|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile49|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile49</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net45+wp8+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile7|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile7</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net45+netcore45+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile78|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net45+netcore45+wp8+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile151|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile151</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net451+netcore451+wpa81+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile157|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile157</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-netcore451+wpa81+wp81\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile31|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile31</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-netcore451+wp81\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile32|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile32</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-netcore451+wpa81\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile44|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile44</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-net451+netcore451+MonoAndroid+Xamarin.iOS+MonoTouch\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile84|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile84</TargetFrameworkProfile>
+    <OutputPath>.\bin\nuget\lib\portable-wpa81+wp81\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Toe.Math.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <None Include="Toe.Math.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BezierCurve.cs" />
+    <Compile Include="BezierCurveCubic.cs" />
+    <Compile Include="BezierCurveQuadric.cs" />
+    <Compile Include="BoundingBox3.cs" />
+    <Compile Include="BoundingSphere.cs" />
+    <Compile Include="Box2.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="MathHelper.cs" />
+    <Compile Include="Matrix2.cs" />
+    <Compile Include="Matrix2d.cs" />
+    <Compile Include="Matrix2x3.cs" />
+    <Compile Include="Matrix2x3d.cs" />
+    <Compile Include="Matrix2x4.cs" />
+    <Compile Include="Matrix2x4d.cs" />
+    <Compile Include="Matrix3.cs" />
+    <Compile Include="Matrix3d.cs" />
+    <Compile Include="Matrix3x2.cs" />
+    <Compile Include="Matrix3x2d.cs" />
+    <Compile Include="Matrix3x4.cs" />
+    <Compile Include="Matrix3x4d.cs" />
+    <Compile Include="Matrix4.cs" />
+    <Compile Include="Matrix4d.cs" />
+    <Compile Include="Matrix4x2.cs" />
+    <Compile Include="Matrix4x2d.cs" />
+    <Compile Include="Matrix4x3.cs" />
+    <Compile Include="Matrix4x3d.cs" />
+    <Compile Include="Plane3.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quaternion.cs" />
+    <Compile Include="Quaterniond.cs" />
+    <Compile Include="Rectangle.cs" />
+    <Compile Include="Size.cs" />
+    <Compile Include="Transformations\AbstractTransformation.cs" />
+    <Compile Include="Transformations\IndentityTransformation.cs" />
+    <Compile Include="Transformations\RotationTransformation.cs" />
+    <Compile Include="Transformations\TransformationNegX.cs" />
+    <Compile Include="Transformations\TransformationNegXNegX.cs" />
+    <Compile Include="Transformations\TransformationNegY.cs" />
+    <Compile Include="Transformations\TransformationNegYNegY.cs" />
+    <Compile Include="Transformations\TransformationNegZ.cs" />
+    <Compile Include="Transformations\TransformationNegZNegX.cs" />
+    <Compile Include="Transformations\TransformationNegZNegXNegX.cs" />
+    <Compile Include="Transformations\TransformationNegZNegY.cs" />
+    <Compile Include="Transformations\TransformationNegZNegYNegY.cs" />
+    <Compile Include="Transformations\TransformationNegZNegZ.cs" />
+    <Compile Include="Transformations\TransformationNegZNegZNegX.cs" />
+    <Compile Include="Transformations\TransformationNegZNegZNegY.cs" />
+    <Compile Include="Transformations\TransformationNegZNegZX.cs" />
+    <Compile Include="Transformations\TransformationNegZNegZY.cs" />
+    <Compile Include="Transformations\TransformationNegZX.cs" />
+    <Compile Include="Transformations\TransformationNegZY.cs" />
+    <Compile Include="Transformations\TransformationNegZZ.cs" />
+    <Compile Include="Transformations\TransformationX.cs" />
+    <Compile Include="Transformations\TransformationY.cs" />
+    <Compile Include="Transformations\TransformationZ.cs" />
+    <Compile Include="Transformations\TransformationZNegX.cs" />
+    <Compile Include="Transformations\TransformationZNegY.cs" />
+    <Compile Include="Transformations\TransformationZX.cs" />
+    <Compile Include="Transformations\TransformationZY.cs" />
+    <Compile Include="Transformations\TranslationTransformation.cs" />
+    <Compile Include="Vector1.cs" />
+    <Compile Include="Vector2.cs" />
+    <Compile Include="Vector2d.cs" />
+    <Compile Include="Vector2i.cs" />
+    <Compile Include="Vector2l.cs" />
+    <Compile Include="Vector3.cs" />
+    <Compile Include="Vector3d.cs" />
+    <Compile Include="Vector3i.cs" />
+    <Compile Include="Vector3l.cs" />
+    <Compile Include="Vector4.cs" />
+    <Compile Include="Vector4d.cs" />
+    <Compile Include="Basis.cs" />
+    <Compile Include="Vector4i.cs" />
+    <Compile Include="Vector4l.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
